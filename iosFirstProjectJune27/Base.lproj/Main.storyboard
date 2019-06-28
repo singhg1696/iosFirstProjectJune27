@@ -42,6 +42,9 @@
                                 <state key="normal" title="Click here to Login ">
                                     <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0k-xA-E3A"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cuf-fe-Ve9">
                                 <rect key="frame" x="100" y="95" width="214" height="21"/>
@@ -56,6 +59,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="labelToShow" destination="Cuf-fe-Ve9" id="VXs-0v-eNz"/>
                         <outlet property="txtTextField" destination="fxq-op-LS8" id="QG2-gi-LGC"/>
                         <outlet property="txtTextField2" destination="ek9-iQ-XkH" id="oCu-aP-IU2"/>
                     </connections>

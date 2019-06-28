@@ -21,31 +21,27 @@ class ViewController: UIViewController
 
     @IBAction func btnAdditionClick(_ sender: UIButton)
     {
-        let text1 = self.txtTextField.text
-        let text2 = self.txtTextField2.text
-        let add = text1! + text2!
-        self.lblMessage.text = add
+        var text1 = Int(self.txtTextField!.text!)
+        var text2 = Int(self.txtTextField2.text!)
+        lblMessage.text = String(text1! + text2!)
     }
     
     @IBAction func btnSubtraction(_ sender: Any) {
-        guard var text1 = Int(self.txtTextField!.text!) else { return <#default value#> }
-        guard var text2 = Int(self.txtTextField2.text!) else { return "" }
-        let sub = String(text1 - text2)
-        self.lblMessage.text = sub
-    }
+        var text1 = Int(self.txtTextField!.text!)
+        var text2 = Int(self.txtTextField2.text!)
+        lblMessage.text = String(text1! - text2!)
+        }
 
     @IBAction func btnMultiplication(_ sender: Any) {
-        let text1 = self.txtTextField.text
-        let text2 = self.txtTextField2.text
-        let mul = text1! * text2!
-        self.lblMessage.text = mul
+        var text1 = Int(self.txtTextField!.text!)
+        var text2 = Int(self.txtTextField2.text!)
+        lblMessage.text = String(text1! * text2!)
     }
     
     @IBAction func btnDivision(_ sender: Any) {
-        let text1 = self.txtTextField.text
-        let text2 = self.txtTextField2.text
-        let div = text1! / text2!
-        self.lblMessage.text = div
+        var text1 = Int(self.txtTextField!.text!)
+        var text2 = Int(self.txtTextField2.text!)
+        lblMessage.text = String(text1! / text2!)
     }
     
 
